@@ -26,7 +26,7 @@ const CustomCard = () => {
         <img
           src={event1}
           alt="event1"
-          className=":hover cursor-pointer rounded-sm"
+          className=":hover cursor-pointer rounded-[0.25rem]"
         />
         <Typography
           sx={{

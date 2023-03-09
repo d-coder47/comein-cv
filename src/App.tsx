@@ -1,14 +1,14 @@
 import "./App.css";
-import CustomCard from "./components/CustomCard";
 import NavBar from "./components/NavBar";
 import Categories from "./components/Categories";
+import Cards from "./components/Cards";
 
 function App() {
   return (
-    <div className="w-screen h-screen flex flex-col ">
+    <div className="w-screen min-h-screen flex flex-col ">
       <NavBar />
       <Categories />
-      <CustomCard />
+      <Cards />
     </div>
   );
 }
