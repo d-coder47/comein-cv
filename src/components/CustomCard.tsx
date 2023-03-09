@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 
 import { Avatar, Box, Typography, Icon } from "@mui/material";
-import { ThumbUpOffAlt, ThumbUp, Star, StarOutline } from "@mui/icons-material";
+import {
+  ThumbUpOffAlt,
+  ThumbUp,
+  Star,
+  StarOutline,
+  Reply,
+} from "@mui/icons-material";
 
 import event1 from "../assets/img/event1.jpg";
 import avatar from "../assets/img/avatar.jpg";
@@ -60,14 +66,18 @@ const CustomCard = () => {
         </Typography>
 
         <Box sx={{ display: "flex", marginLeft: "auto" }}>
-          <ThumbUpOffAlt
-            sx={{ display: "flex", width: 18, height: 18, cursor: "pointer" }}
+          <ThumbUpOffAlt sx={{ width: 18, height: 18, cursor: "pointer" }} />
+          {/* <ThumbUp sx={{  width: 18, height: 18, cursor: "pointer" }} /> */}
+          <Star sx={{ width: 18, height: 18, cursor: "pointer" }} />
+          {/* <StarOutline sx={{  width: 18, height: 18, cursor: "pointer" }} /> */}
+          <Reply
+            sx={{
+              width: 18,
+              height: 18,
+              cursor: "pointer",
+              transform: "scaleX(-1)",
+            }}
           />
-          {/* <ThumbUp sx={{ display: "flex", width: 18, height: 18 }} /> */}
-          <Star
-            sx={{ display: "flex", width: 18, height: 18, cursor: "pointer" }}
-          />
-          {/* <StarOutline sx={{ display: "flex", width: 18, height: 18 }} /> */}
         </Box>
       </Box>
     </div>
