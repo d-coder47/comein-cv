@@ -40,6 +40,7 @@ const Categories = () => {
       sx={{
         margin: "1rem 2rem",
         overflowX: "auto",
+        scrollbarWidth: "none",
         paddingBottom: "1rem",
         display: "flex",
         alignItems: "center",
