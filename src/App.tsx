@@ -1,14 +1,11 @@
 import "./App.css";
-import NavBar from "./components/NavBar";
-import Categories from "./components/Categories";
-import Cards from "./components/Cards";
+
+import AppRoutes from "./routes";
 
 function App() {
   return (
     <div className="w-screen min-h-screen flex flex-col ">
-      <NavBar />
-      <Categories />
-      <Cards />
+      <AppRoutes />
     </div>
   );
 }
